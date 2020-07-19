@@ -12,9 +12,20 @@ Railgun::~Railgun()
 }
 void Railgun::Play()
 {
+	Init();
+	while (WindowShouldClose)
+	{
+		Input();
+		Update();
+		Draw();
+	}
 }
 void Railgun::Init()
 {
+}
+void Railgun::Input()
+{
+
 }
 void Railgun::Update()
 {
