@@ -13,7 +13,7 @@ Railgun::~Railgun()
 void Railgun::Play()
 {
 	Init();
-	while (WindowShouldClose)
+	while (!WindowShouldClose())
 	{
 		Input();
 		Update();
