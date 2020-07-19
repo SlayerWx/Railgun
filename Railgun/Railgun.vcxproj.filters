@@ -4,21 +4,21 @@
     <Filter Include="src">
       <UniqueIdentifier>{ca2ef622-b449-4693-995a-9c9e66a4031e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\game">
-      <UniqueIdentifier>{1849906b-ee8a-42e6-a509-2d71fb432b1f}</UniqueIdentifier>
+    <Filter Include="src\railgun">
+      <UniqueIdentifier>{33876a2b-2f27-4c6f-9bfa-4db25cbeeeb7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\game\game.cpp">
-      <Filter>src\game</Filter>
+    <ClCompile Include="..\src\railgun\railgun.cpp">
+      <Filter>src\railgun</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\game\game.h">
-      <Filter>src\game</Filter>
+    <ClInclude Include="..\src\railgun\railgun.h">
+      <Filter>src\railgun</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

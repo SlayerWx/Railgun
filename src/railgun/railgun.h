@@ -1,8 +1,10 @@
 #ifndef RAILGUN_H
 #define RAILGUN_H
+#include <iostream>
+#include "raylib.h"
 namespace railgun
 {
-#include "raylib.h"
+using namespace std;
 class Railgun
 {
 public:
@@ -10,7 +12,10 @@ public:
 	~Railgun();
 	void Play();
 private:
-
+	const int initialWindowSizeHeight = 500;
+	const int initialWindowsSizeWidth = 800;
+	const string title = "Railgun";
+	const string version = "V0.1";
 };
 }
 #endif
