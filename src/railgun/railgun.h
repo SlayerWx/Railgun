@@ -1,13 +1,13 @@
-#ifndef GAME_H
-#define GAME_H
+#ifndef RAILGUN_H
+#define RAILGUN_H
 namespace railgun
 {
 #include "raylib.h"
-class Game
+class Railgun
 {
 public:
-	Game();
-	~Game();
+	Railgun();
+	~Railgun();
 	void Play();
 private:
 
