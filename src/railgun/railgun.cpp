@@ -4,7 +4,6 @@ namespace railgun
 Railgun::Railgun()
 {
 	InitWindow(initialWindowsSizeWidth, initialWindowSizeHeight, (title +' '+ version).c_str());
-	cin.get();
 }
 Railgun::~Railgun()
 {
@@ -32,5 +31,8 @@ void Railgun::Update()
 }
 void Railgun::Draw()
 {
+	BeginDrawing();
+	ClearBackground(BLACK);
+	EndDrawing();
 }
 }
