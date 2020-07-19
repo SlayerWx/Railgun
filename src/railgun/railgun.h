@@ -16,6 +16,9 @@ private:
 	const int initialWindowsSizeWidth = 800;
 	const string title = "Railgun";
 	const string version = "V0.1";
+	void Init();
+	void Update();
+	void Draw();
 };
 }
 #endif

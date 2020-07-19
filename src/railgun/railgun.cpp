@@ -3,7 +3,7 @@ namespace railgun
 {
 Railgun::Railgun()
 {
-	InitWindow(500, 500, (title +' '+ version).c_str());
+	InitWindow(initialWindowsSizeWidth, initialWindowSizeHeight, (title +' '+ version).c_str());
 	cin.get();
 }
 Railgun::~Railgun()
@@ -11,6 +11,15 @@ Railgun::~Railgun()
 	CloseWindow();
 }
 void Railgun::Play()
+{
+}
+void Railgun::Init()
+{
+}
+void Railgun::Update()
+{
+}
+void Railgun::Draw()
 {
 }
 }
