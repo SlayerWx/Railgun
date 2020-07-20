@@ -1,6 +1,7 @@
 #include "railgun.h"
 
 #include "raylib.h"
+#include "elements/gameplay/gameplay.h"
 namespace railgun
 {
 Railgun::Railgun()

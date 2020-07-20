@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\gameplay\gameplay.cpp" />
+    <ClCompile Include="..\src\elements\gameplay\gameplay.cpp" />
     <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\objects\player\player.cpp" />
     <ClCompile Include="..\src\railgun\railgun.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\gameplay\gameplay.h" />
+    <ClInclude Include="..\src\elements\gameplay\gameplay.h" />
+    <ClInclude Include="..\src\objects\player\player.h" />
     <ClInclude Include="..\src\railgun\railgun.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

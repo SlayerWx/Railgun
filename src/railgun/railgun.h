@@ -4,7 +4,7 @@
 
 #include "raylib.h"
 
-#include "gameplay/gameplay.h"
+#include "elements/gameplay/gameplay.h"
 namespace railgun
 {
 using namespace std;
