@@ -6,6 +6,7 @@ namespace railgun
 Railgun::Railgun()
 {
 	InitWindow(initialWindowsSizeWidth, initialWindowSizeHeight, (title +' '+ version).c_str());
+	currentStage = Stage_Menu;
 	gameplay = new Gameplay();
 }
 Railgun::~Railgun()
@@ -24,18 +25,45 @@ void Railgun::Play()
 }
 void Railgun::Input()
 {
-	gameplay->Input();
+	switch (currentStage)
+	{
+	case Stage_SplashScreen:
+		break;
+	case Stage_Menu:
+		break;
+	case Stage_Gameplay:
+		gameplay->Input();
+		break;
+	}
 }
 void Railgun::Update()
 {
-	gameplay->Update();
+	switch (currentStage)
+	{
+	case Stage_SplashScreen:
+		break;
+	case Stage_Menu:
+		break;
+	case Stage_Gameplay:
+		gameplay->Update();
+		break;
+
+	}
 }
 void Railgun::Draw()
 {
 	BeginDrawing();
 	ClearBackground(BLACK);
-
-	gameplay->Draw();
+	switch (currentStage)
+	{
+	case Stage_SplashScreen:
+		break;
+	case Stage_Menu:
+		break;
+	case Stage_Gameplay:
+		gameplay->Draw();
+		break;
+	}
 	EndDrawing();
 }
 }

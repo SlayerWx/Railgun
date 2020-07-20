@@ -8,6 +8,10 @@
 namespace railgun
 {
 using namespace std;
+enum GameStage
+{
+	Stage_SplashScreen, Stage_Menu, Stage_Gameplay
+};
 class Railgun
 {
 public:
@@ -20,6 +24,7 @@ private:
 	const string title = "Railgun";
 	const string version = "V0.1";
 	Gameplay* gameplay;
+	GameStage currentStage;
 	void Input();
 	void Update();
 	void Draw();
