@@ -1,7 +1,10 @@
 #ifndef RAILGUN_H
 #define RAILGUN_H
 #include <iostream>
+
 #include "raylib.h"
+
+#include "gameplay/gameplay.h"
 namespace railgun
 {
 using namespace std;
@@ -16,7 +19,7 @@ private:
 	const int initialWindowsSizeWidth = 800;
 	const string title = "Railgun";
 	const string version = "V0.1";
-	void Init();
+	Gameplay* gameplay;
 	void Input();
 	void Update();
 	void Draw();
