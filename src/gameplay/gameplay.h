@@ -8,7 +8,7 @@ class Gameplay
 public:
 	Gameplay();
 	~Gameplay();
-	void Init();
+	void Restart();
 	void Input();
 	void Update();
 	void Draw();

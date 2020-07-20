@@ -7,6 +7,9 @@
     <Filter Include="src\railgun">
       <UniqueIdentifier>{33876a2b-2f27-4c6f-9bfa-4db25cbeeeb7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\gameplay">
+      <UniqueIdentifier>{2b858157-da97-44e2-b10a-26afb762916e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp">
@@ -15,10 +18,16 @@
     <ClCompile Include="..\src\railgun\railgun.cpp">
       <Filter>src\railgun</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\gameplay\gameplay.cpp">
+      <Filter>src\gameplay</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\railgun\railgun.h">
       <Filter>src\railgun</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gameplay\gameplay.h">
+      <Filter>src\gameplay</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

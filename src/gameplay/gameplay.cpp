@@ -9,7 +9,7 @@ Gameplay::Gameplay()
 Gameplay::~Gameplay()
 {
 }
-void Gameplay::Init()
+void Gameplay::Restart()
 {
 }
 void Gameplay::Input()
