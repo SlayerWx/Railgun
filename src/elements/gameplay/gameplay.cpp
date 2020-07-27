@@ -24,10 +24,12 @@ void Gameplay::Restart()
 }
 void Gameplay::Input()
 {
-	player->Input(timeGameplayScale);
+	player->Input();
 }
 void Gameplay::Update()
 {
+	player->CheckCollision(floor->GetX(),floor->GetY(),floor->GetWidth(),floor->GetHeight());
+	player->Move(timeGameplayScale);
 }
 void Gameplay::Draw()
 {
