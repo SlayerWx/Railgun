@@ -24,6 +24,7 @@
     <ClCompile Include="..\src\objects\floor\floor.cpp" />
     <ClCompile Include="..\src\objects\object.cpp" />
     <ClCompile Include="..\src\objects\player\player.cpp" />
+    <ClCompile Include="..\src\objects\with_mobility\with_mobility.cpp" />
     <ClCompile Include="..\src\railgun\railgun.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -31,6 +32,7 @@
     <ClInclude Include="..\src\objects\floor\floor.h" />
     <ClInclude Include="..\src\objects\object.h" />
     <ClInclude Include="..\src\objects\player\player.h" />
+    <ClInclude Include="..\src\objects\with_mobility\with_mobility.h" />
     <ClInclude Include="..\src\railgun\railgun.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

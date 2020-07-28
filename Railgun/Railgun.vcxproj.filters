@@ -22,6 +22,9 @@
     <Filter Include="src\objects\floor">
       <UniqueIdentifier>{2bc3a9d4-9b76-4057-b8c8-7c78a09ed51f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\objects\with_mobility">
+      <UniqueIdentifier>{315f602b-c24b-43bc-8ff7-36b4512d2967}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp">
@@ -42,6 +45,9 @@
     <ClCompile Include="..\src\objects\object.cpp">
       <Filter>src\objects</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\objects\with_mobility\with_mobility.cpp">
+      <Filter>src\objects\with_mobility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\railgun\railgun.h">
@@ -58,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="..\src\objects\object.h">
       <Filter>src\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\objects\with_mobility\with_mobility.h">
+      <Filter>src\objects\with_mobility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
