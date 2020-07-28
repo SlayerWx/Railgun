@@ -19,11 +19,11 @@
     <Filter Include="src\objects\player">
       <UniqueIdentifier>{2d591f1f-9cff-4a72-aedc-8d58a1445a50}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\objects\floor">
-      <UniqueIdentifier>{2bc3a9d4-9b76-4057-b8c8-7c78a09ed51f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\objects\with_mobility">
       <UniqueIdentifier>{315f602b-c24b-43bc-8ff7-36b4512d2967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\objects\obstacle">
+      <UniqueIdentifier>{2bc3a9d4-9b76-4057-b8c8-7c78a09ed51f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,14 +39,14 @@
     <ClCompile Include="..\src\objects\player\player.cpp">
       <Filter>src\objects\player</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\objects\floor\floor.cpp">
-      <Filter>src\objects\floor</Filter>
+    <ClCompile Include="..\src\objects\with_mobility\with_mobility.cpp">
+      <Filter>src\objects\with_mobility</Filter>
     </ClCompile>
     <ClCompile Include="..\src\objects\object.cpp">
       <Filter>src\objects</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\objects\with_mobility\with_mobility.cpp">
-      <Filter>src\objects\with_mobility</Filter>
+    <ClCompile Include="..\src\objects\obstacle\obstacle.cpp">
+      <Filter>src\objects\obstacle</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -59,14 +59,14 @@
     <ClInclude Include="..\src\objects\player\player.h">
       <Filter>src\objects\player</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\objects\floor\floor.h">
-      <Filter>src\objects\floor</Filter>
+    <ClInclude Include="..\src\objects\with_mobility\with_mobility.h">
+      <Filter>src\objects\with_mobility</Filter>
     </ClInclude>
     <ClInclude Include="..\src\objects\object.h">
       <Filter>src\objects</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\objects\with_mobility\with_mobility.h">
-      <Filter>src\objects\with_mobility</Filter>
+    <ClInclude Include="..\src\objects\obstacle\obstacle.h">
+      <Filter>src\objects\obstacle</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

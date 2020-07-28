@@ -2,7 +2,7 @@
 
 #include "raylib.h"
 #include "objects/player/player.h"
-#include "objects/floor/floor.h"
+#include "objects/obstacle/obstacle.h"
 namespace railgun
 {
 Gameplay::Gameplay()
@@ -10,13 +10,13 @@ Gameplay::Gameplay()
 	player = new Player();
 	player->SetPosition(0.0f,0.0f);
 	player->SetColor(BLUE);
-	floor = new Floor();
-	floor->SetPosition(200.0f, 200.0f);
-	floor->SetColor(GREEN);
+	obstacle = new Obstacle();
+	obstacle->SetPosition(200.0f, 200.0f);
+	obstacle->SetColor(GREEN);
 }
 Gameplay::~Gameplay()
 {
-	if (floor) delete floor;
+	if (obstacle) delete obstacle;
 	if (player) delete player;
 }
 void Gameplay::Restart()
@@ -28,12 +28,12 @@ void Gameplay::Input()
 }
 void Gameplay::Update()
 {
-	player->CheckCollision(floor->GetX(),floor->GetY(),floor->GetWidth(),floor->GetHeight());
+	player->CheckCollision(obstacle->GetX(),obstacle->GetY(),obstacle->GetWidth(),obstacle->GetHeight());
 	player->Move(timeGameplayScale);
 }
 void Gameplay::Draw()
 {
-	floor->Draw();
+	obstacle->Draw();
 	player->Draw();
 }
 }

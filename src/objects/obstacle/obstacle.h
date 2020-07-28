@@ -4,11 +4,11 @@
 #include "objects/object.h"
 namespace railgun 
 {
-class Floor : public Object
+class Obstacle : public Object
 {
 public:
-	Floor();
-	~Floor();
+	Obstacle();
+	~Obstacle();
 private:
 };
 }

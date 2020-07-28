@@ -1,8 +1,8 @@
-#include "floor.h"
+#include "obstacle.h"
 #include "raylib.h"
 namespace railgun 
 {
-Floor::Floor()
+Obstacle::Obstacle()
 {
 	body.x = 0.0f;
 	body.y = 0.0f;
@@ -10,7 +10,7 @@ Floor::Floor()
 	body.width = 90.0f;
 }
 
-Floor::~Floor()
+Obstacle::~Obstacle()
 {
 }
 }
