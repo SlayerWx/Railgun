@@ -21,7 +21,6 @@ protected:
 	DirectionChecker movement;
 	DirectionChecker canMove;
 	static const float distanceCheckerMaxDetection;
-
 };
 }
 #endif
