@@ -12,6 +12,9 @@ Gameplay::Gameplay()
 	player->SetPosition(0.0f,0.0f);
 	player->SetColor(BLUE);
 	map = new Map();
+	player->SetMapLimitInThisObject(map->LimitMap());
+	player->SetX(50.0f);
+	player->SetY(200.0f);
 	//obstacle->SetPosition(200.0f, 200.0f);
 	//obstacle->SetColor(GREEN);
 }

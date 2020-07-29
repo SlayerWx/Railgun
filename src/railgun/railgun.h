@@ -19,8 +19,8 @@ public:
 	~Railgun();
 	void Play();
 private:
-	const int initialWindowSizeHeight = 500;
-	const int initialWindowsSizeWidth = 800;
+	const int initialWindowSizeHeight = 700;
+	const int initialWindowsSizeWidth = 1200;
 	const string title = "Railgun";
 	const string version = "V0.1";
 	Gameplay* gameplay;

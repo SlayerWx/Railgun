@@ -7,18 +7,34 @@ void WithMobility::Move(float timeScale)
 	if (canMove.right && movement.right)
 	{
 		body.x += (speed * GetFrameTime()) * timeScale;
+		if (body.x > mapLimitRight - body.width)
+		{
+			body.x = mapLimitRight - body.width;
+		}
 	}
 	if (canMove.down && movement.down)
 	{
 		body.y += (speed * GetFrameTime()) * timeScale;
+		if (body.y > mapLimitDown - body.height)
+		{
+			body.y = mapLimitDown - body.height;
+		}
 	}
 	if (canMove.left && movement.left)
 	{
 		body.x -= (speed * GetFrameTime()) * timeScale;
+		if (body.x < mapLimitLeft)
+		{
+			body.x = mapLimitLeft;
+		}
 	}
 	if (canMove.up && movement.up)
 	{
 		body.y -= (speed * GetFrameTime()) * timeScale;
+		if (body.y < mapLimitUp)
+		{
+			body.y = mapLimitUp;
+		}
 	}
 }
 void WithMobility::CheckCollision(float xCol, float yCol, float widthCol, float heightCol)
@@ -56,5 +72,13 @@ void WithMobility::CheckCollision(float xCol, float yCol, float widthCol, float 
 			canMove.down = false;
 		}
 	}
-}//asAS
+}
+void WithMobility::SetMapLimitInThisObject(Vector4 limits)
+{
+	mapLimitLeft = limits.x;
+	mapLimitUp = limits.y;
+	mapLimitRight = limits.z;
+	mapLimitDown = limits.w;
+}
+//asAS
 }

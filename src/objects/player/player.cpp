@@ -3,8 +3,8 @@ namespace railgun
 {
 Player::Player()
 {
-	body.width = 10.0f;
-	body.height = 10.0f;
+	body.width = 20.0f;
+	body.height = 20.0f;
 	body.x = 0.0f;
 	body.y = 0.0f;
 }

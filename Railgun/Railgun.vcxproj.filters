@@ -25,6 +25,9 @@
     <Filter Include="src\objects\obstacle">
       <UniqueIdentifier>{2bc3a9d4-9b76-4057-b8c8-7c78a09ed51f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\elements\map">
+      <UniqueIdentifier>{bdde013a-1150-4740-99ba-def805b35f53}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp">
@@ -48,6 +51,9 @@
     <ClCompile Include="..\src\objects\obstacle\obstacle.cpp">
       <Filter>src\objects\obstacle</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\elements\map\map.cpp">
+      <Filter>src\elements\map</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\railgun\railgun.h">
@@ -67,6 +73,9 @@
     </ClInclude>
     <ClInclude Include="..\src\objects\obstacle\obstacle.h">
       <Filter>src\objects\obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\elements\map\map.h">
+      <Filter>src\elements\map</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -15,12 +15,16 @@ class WithMobility : public Object
 public:
 	void Move(float timeScale);
 	void CheckCollision(float xCol, float yCol, float widthCol, float heightCol);
-
+	void SetMapLimitInThisObject(Vector4 limits);
 protected:
 	float speed = 150.0f;
 	DirectionChecker movement;
 	DirectionChecker canMove;
 	static const float distanceCheckerMaxDetection;
+	float mapLimitUp;
+	float mapLimitDown;
+	float mapLimitRight;
+	float mapLimitLeft;
 };
 }
 #endif

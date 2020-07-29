@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\elements\gameplay\gameplay.cpp" />
+    <ClCompile Include="..\src\elements\map\map.cpp" />
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\objects\object.cpp" />
     <ClCompile Include="..\src\objects\obstacle\obstacle.cpp" />
@@ -29,6 +30,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\elements\gameplay\gameplay.h" />
+    <ClInclude Include="..\src\elements\map\map.h" />
     <ClInclude Include="..\src\objects\object.h" />
     <ClInclude Include="..\src\objects\obstacle\obstacle.h" />
     <ClInclude Include="..\src\objects\player\player.h" />
